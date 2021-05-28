@@ -3,7 +3,6 @@
 namespace Fas\Exportable\Tests;
 
 use ArrayObject;
-use Fas\Exportable\ExportableInterface;
 use Fas\Exportable\ExportableRaw;
 use Fas\Exportable\Exporter;
 use Fas\Exportable\InvalidKeyException;
