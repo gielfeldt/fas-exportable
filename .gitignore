@@ -3,4 +3,6 @@
 /coverage/*
 !/coverage/.gitkeep
 
-/composer.lock
+/.vscode/
+
+composer.lock
