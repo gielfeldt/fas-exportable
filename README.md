@@ -1,11 +1,10 @@
-[![Build Status](https://github.com/gielfeldt/fas-exportable/actions/workflows/php.yml/badge.svg)][1]
-[![Test Coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/gielfeldt/e9c4f6129cef70b1a3c998fe2c773aaf/raw/fas-exportable__main.json)][2]
+![Build Status](https://github.com/gielfeldt/fas-exportable/actions/workflows/php.yml/badge.svg)
+![Test Coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/gielfeldt/e9c4f6129cef70b1a3c998fe2c773aaf/raw/fas-exportable__main.json)
 
-[![Latest Stable Version](https://poser.pugx.org/fas/exportable/v/stable.svg)][4]
-[![Latest Unstable Version](https://poser.pugx.org/fas/exportable/v/unstable.svg)][4]
-[![Dependency Status](https://www.versioneye.com/user/projects/58ed39a526a5bb0038e422f7/badge.svg?style=flat)][5]
-[![License](https://poser.pugx.org/fas/exportable/license.svg)][6]
-[![Total Downloads](https://poser.pugx.org/fas/exportable/downloads.svg)][4]
+![Latest Stable Version](https://poser.pugx.org/fas/exportable/v/stable.svg)
+![Latest Unstable Version](https://poser.pugx.org/fas/exportable/v/unstable.svg)
+![License](https://poser.pugx.org/fas/exportable/license.svg)
+![Total Downloads](https://poser.pugx.org/fas/exportable/downloads.svg)
 
 
 # Installation
