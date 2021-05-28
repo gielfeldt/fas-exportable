@@ -5,6 +5,8 @@ namespace Fas\Exportable;
 class ExportableIterable implements ExportableInterface
 {
     private iterable $data;
+    private string $indent = "  ";
+    private string $eol = "\n";
 
     public function __construct(iterable $data)
     {
@@ -13,8 +15,7 @@ class ExportableIterable implements ExportableInterface
 
     public function exportable(Exporter $exporter, $level = 0): string
     {
-        $indent = str_repeat($exporter->indent(), $level);
-        $eol = $exporter->eol();
+        $indent = str_repeat($this->indent, $level);
         $result = "";
         $items = [];
         foreach ($this->data as $key => $value) {
@@ -23,9 +24,9 @@ class ExportableIterable implements ExportableInterface
             }
             $eKey = var_export($key, true);
             $eValue = $exporter->export($value, $level + 1);
-            $items[] =  $indent . $exporter->indent() . $eKey . ' => ' . $eValue;
+            $items[] =  $indent . $this->indent . $eKey . ' => ' . $eValue;
         }
-        $result = "[$eol" . implode(",$eol", $items) . $eol . $indent . "]";
+        $result = '[' . $this->eol . implode(',' . $this->eol, $items) . $this->eol . $indent . ']';
         return $result;
     }
 }

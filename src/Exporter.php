@@ -7,24 +7,9 @@ use Fas\Exportable\ExportableInterface;
 
 class Exporter implements ResolverInterface
 {
-    private string $indent;
-    private string $eol;
-
-    public function __construct(?ResolverInterface $resolver = null, string $indent = "  ", string $eol = "\n")
+    public function __construct(?ResolverInterface $resolver = null)
     {
         $this->resolver = $resolver ?? $this;
-        $this->indent = $indent;
-        $this->eol = $eol;
-    }
-
-    public function indent()
-    {
-        return $this->indent;
-    }
-
-    public function eol()
-    {
-        return $this->eol;
     }
 
     public function export($data, $level = 0): string
