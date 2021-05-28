@@ -3,8 +3,6 @@ name: PHP Composer
 on:
   push:
     branches: [ main ]
-  pull_request:
-    branches: [ main ]
 
 jobs:
   build:
@@ -34,3 +32,17 @@ jobs:
 
     - name: Run test suite
       run: XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-text --whitelist src/ tests/
+
+    - name: Temp percentage
+      run: echo "COVERAGE=98.12%" >> $GITHUB_ENV
+
+    - name: Create the Badge
+      uses: schneegans/dynamic-badges-action@v1.0.0
+      with:
+        auth: ${{ secrets.GIST_SECRET }}
+        gistID: e9c4f6129cef70b1a3c998fe2c773aaf
+        filename: fas-exportable__main.json
+        label: Test Coverage
+        message: ${{ env.COVERAGE }}
+        color: green
+        namedLogo: jest
