@@ -31,10 +31,12 @@ jobs:
     # Docs: https://getcomposer.org/doc/articles/scripts.md
 
     - name: Run test suite
-      run: XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-text --whitelist src/ tests/
-
-    - name: Temp percentage
-      run: echo "COVERAGE=98.12%" >> $GITHUB_ENV
+      run: |
+        XDEBUG_MODE=coverage vendor/bin/phpunit --coverage-text=coverage.txt --whitelist src/ tests/
+        cat coverage.txt
+        COVERAGE=$(cat coverage.txt | grep -E '^\s+Lines:.*' | perl -pe 's/(.*?)(\d+\.\d+%).*/$2/')
+        echo $COVERAGE
+        echo "COVERAGE=$(echo ${COVERAGE})" >> $GITHUB_ENV
 
     - name: Create the Badge
       uses: schneegans/dynamic-badges-action@v1.0.0
