@@ -1,5 +1,16 @@
 
 
+# Installation
+
+```bash
+composer require fas/exportable
+```
+
+## Optional closure export support
+```bash
+composer require opis/closure:^3.6
+```
+
 # Usage
 
 ## Closures
