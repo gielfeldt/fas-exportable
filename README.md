@@ -1,9 +1,9 @@
-![Build Status](https://github.com/gielfeldt/fas-exportable/actions/workflows/test.yml/badge.svg)
+[![Build Status](https://github.com/gielfeldt/fas-exportable/actions/workflows/test.yml/badge.svg)][4]
 ![Test Coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/gielfeldt/e9c4f6129cef70b1a3c998fe2c773aaf/raw/fas-exportable__main.json)
 
-![Latest Stable Version](https://poser.pugx.org/fas/exportable/v/stable.svg)
-![Latest Unstable Version](https://poser.pugx.org/fas/exportable/v/unstable.svg)
-![License](https://poser.pugx.org/fas/exportable/license.svg)
+[![Latest Stable Version](https://poser.pugx.org/fas/exportable/v/stable.svg)][1]
+[![Latest Unstable Version](https://poser.pugx.org/fas/exportable/v/unstable.svg)][2]
+[![License](https://poser.pugx.org/fas/exportable/license.svg)][3]
 ![Total Downloads](https://poser.pugx.org/fas/exportable/downloads.svg)
 
 
@@ -88,3 +88,8 @@ print "$output\n";
   'somekey' => 'SOMEVALUE'
 ]
 ```
+
+[1]:  https://packagist.org/packages/fas/exportable
+[2]:  https://packagist.org/packages/fas/exportable#dev-main
+[3]:  https://github.com/gielfeldt/fas-exportable/blob/main/LICENSE.md
+[4]:  https://github.com/gielfeldt/fas-exportable/actions/workflows/test.yml
