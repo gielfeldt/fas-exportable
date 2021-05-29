@@ -1,4 +1,4 @@
-![Build Status](https://github.com/gielfeldt/fas-exportable/actions/workflows/php.yml/badge.svg)
+![Build Status](https://github.com/gielfeldt/fas-exportable/actions/workflows/test.yml/badge.svg)
 ![Test Coverage](https://img.shields.io/endpoint?url=https://gist.githubusercontent.com/gielfeldt/e9c4f6129cef70b1a3c998fe2c773aaf/raw/fas-exportable__main.json)
 
 ![Latest Stable Version](https://poser.pugx.org/fas/exportable/v/stable.svg)
